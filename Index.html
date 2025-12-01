@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Colts Game Zone</title>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:700,900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #0f1c2e 0%, #1662b6 80%);
+      font-family: 'Orbitron', Arial, sans-serif;
+      color: #eaf6fb;
+      min-height: 100vh;
+    }
+    header {
+      background: #003087;
+      color: #fff;
+      font-size: 2.3rem;
+      font-family: 'Orbitron', Arial, sans-serif;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 3px;
+      padding: 1.8rem 0 1rem 0;
+      box-shadow: 0 2px 18px #099ffd41;
+      border-bottom: 3px solid #55c3ecaa;
+      position: relative;
+      z-index: 2;
+    }
+    .logo {
+      display: inline-flex;
+      vertical-align: middle;
+      align-items: center;
+      gap: 1rem;
+    }
+    .logo svg {
+      width: 52px;
+      height: 52px;
+      fill: #55c3ec;
+      filter: drop-shadow(0 0 8px #fff4);
+    }
+    main {
+      padding: 3.5rem 2vw 2rem 2vw;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 1.32rem;
+      color: #b1e9ff;
+      margin-bottom: 2rem;
+      text-shadow: 0 2px 15px #1798faa2;
+    }
+    .games-section {
+      display: flex;
+      gap: 2.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .game-card {
+      background: linear-gradient(135deg, #0a5592 70%, #55c3ec20 100%);
+      border: 2.5px solid #55c3ec88;
+      border-radius: 22px;
+      box-shadow: 0 12px 44px #169fec33, 0 2px 10px #55c3ec22;
+      width: 270px;
+      padding: 2.4rem 1.5rem 1.6rem 1.5rem;
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.18s, box-shadow 0.16s, border-color 0.18s;
+      z-index: 1;
+    }
+    .game-card:hover {
+      transform: translateY(-9px) scale(1.035);
+      box-shadow: 0 4px 80px #00ffee99, 0 8px 18px #23c1fe66;
+      border-color: #3beafe;
+    }
+    .game-icon {
+      font-size: 3.5rem;
+      margin-bottom: 0.7rem;
+      display: inline-block;
+      color: #55c3ec;
+      text-shadow: 0 0 18px #38e0ffc6;
+    }
+    .game-title {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: #55c3ec;
+      letter-spacing: 2px;
+      margin-bottom: 0.62rem;
+      text-shadow: 0 0 10px #3beafe66;
+    }
+    .game-desc {
+      color: #eaf6fb;
+      font-size: 1.05rem;
+      margin-bottom: 1.9rem;
+    }
+    .play-btn {
+      background: #1eb9fd;
+      color: #fff;
+      border: none;
+      border-radius: 16px;
+      font-family: 'Orbitron', Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: 900;
+      padding: 0.62rem 2.1rem;
+      letter-spacing: 1.5px;
+      box-shadow: 0 6px 16px #1798fa66;
+      cursor: pointer;
+      transition: background 0.12s, color 0.15s;
+    }
+    .play-btn:hover {
+      background: #003087;
+      color: #55c3ec;
+    }
+    footer {
+      text-align: center;
+      color: #9ee4ff;
+      font-size: 1.08rem;
+      margin-top: 3vw;
+      margin-bottom: 1.4rem;
+      letter-spacing: 2px;
+      border-top: 1.5px solid #55c3ec44;
+      padding-top: 1.3rem;
+    }
+    @media (max-width:950px) {
+      .games-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.2rem;
+      }
+      .game-card { width: 95vw; max-width: 360px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="logo">
+      <!-- stylized horseshoe icon -->
+      <svg viewBox="0 0 60 60">
+        <ellipse cx="30" cy="33" rx="21" ry="23" fill="none" stroke="#55c3ec" stroke-width="5"/>
+        <ellipse cx="30" cy="44" rx="12" ry="14" fill="none" stroke="#fff" stroke-width="2.2" />
+      </svg>
+      COLTS GAME ZONE
+    </span>
+  </header>
+  <main>
+    <div class="subtitle">
+      Classic Arcade Games • Colts Style • Play & Enjoy!
+    </div>
+    <section class="games-section">
+      <div class="game-card">
+        <div class="game-icon">🐍</div>
+        <div class="game-title">Snake</div>
+        <div class="game-desc">
+          Guide your snake, collect blue horseshoes, and grow without hitting the edge!
+        </div>
+        <a href="snake.html" class="play-btn">PLAY</a>
+      </div>
+      <div class="game-card">
+        <div class="game-icon">🧱</div>
+        <div class="game-title">Breakout</div>
+        <div class="game-desc">
+          Smash through blue and white bricks in this Colts-themed twist on a classic.
+        </div>
+        <a href="breakout.html" class="play-btn">PLAY</a>
+      </div>
+      <div class="game-card">
+        <div class="game-icon">🏓</div>
+        <div class="game-title">Pong</div>
+        <div class="game-desc">
+          Go head-to-head in a blue-and-white pong show match. First to score wins!
+        </div>
+        <a href="pong.html" class="play-btn">PLAY</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Colts Game Zone | Designed by SethHall1010
+  </footer>
+</body>
+</html>
+        <p>&copy; 2025 HoopsHub. Slam dunk your week!</p>
+    </footer>
+</body>
+</html>
